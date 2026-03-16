@@ -1,0 +1,14 @@
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\bin\Debug\net10.0\GestorDeClientes.exe
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\bin\Debug\net10.0\GestorDeClientes.deps.json
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\bin\Debug\net10.0\GestorDeClientes.runtimeconfig.json
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\bin\Debug\net10.0\GestorDeClientes.dll
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\bin\Debug\net10.0\GestorDeClientes.pdb
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.AssemblyInfoInputs.cache
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.AssemblyInfo.cs
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.csproj.CoreCompileInputs.cache
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.dll
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\refint\GestorDeClientes.dll
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.pdb
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.genruntimeconfig.cache
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\ref\GestorDeClientes.dll
