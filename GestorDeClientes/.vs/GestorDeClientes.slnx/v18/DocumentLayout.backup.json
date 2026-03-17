@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\nataf\\OneDrive\\Documentos\\Gestor-de-Clientes-CMD\\GestorDeClientes\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{64F83D50-530C-5D26-A12D-79CEEB4EE6AA}|GestorDeClientes\\GestorDeClientes.csproj|c:\\users\\nataf\\onedrive\\documentos\\gestor-de-clientes-cmd\\gestordeclientes\\gestordeclientes\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F83D50-530C-5D26-A12D-79CEEB4EE6AA}|GestorDeClientes\\GestorDeClientes.csproj|solutionrelative:gestordeclientes\\repositories\\clienterepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F83D50-530C-5D26-A12D-79CEEB4EE6AA}|GestorDeClientes\\GestorDeClientes.csproj|c:\\users\\nataf\\onedrive\\documentos\\gestor-de-clientes-cmd\\gestordeclientes\\gestordeclientes\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F83D50-530C-5D26-A12D-79CEEB4EE6AA}|GestorDeClientes\\GestorDeClientes.csproj|solutionrelative:gestordeclientes\\services\\clienteservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{64F83D50-530C-5D26-A12D-79CEEB4EE6AA}|GestorDeClientes\\GestorDeClientes.csproj|c:\\users\\nataf\\onedrive\\documentos\\gestor-de-clientes-cmd\\gestordeclientes\\gestordeclientes\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{64F83D50-530C-5D26-A12D-79CEEB4EE6AA}|GestorDeClientes\\GestorDeClientes.csproj|solutionrelative:gestordeclientes\\models\\cliente.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{64F83D50-530C-5D26-A12D-79CEEB4EE6AA}|GestorDeClientes\\GestorDeClientes.csproj|c:\\users\\nataf\\onedrive\\documentos\\gestor-de-clientes-cmd\\gestordeclientes\\gestordeclientes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{64F83D50-530C-5D26-A12D-79CEEB4EE6AA}|GestorDeClientes\\GestorDeClientes.csproj|solutionrelative:gestordeclientes\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -14,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -30,16 +42,52 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ClienteService.cs",
+              "DocumentMoniker": "C:\\Users\\nataf\\OneDrive\\Documentos\\Gestor-de-Clientes-CMD\\GestorDeClientes\\GestorDeClientes\\Services\\ClienteService.cs",
+              "RelativeDocumentMoniker": "GestorDeClientes\\Services\\ClienteService.cs",
+              "ToolTip": "C:\\Users\\nataf\\OneDrive\\Documentos\\Gestor-de-Clientes-CMD\\GestorDeClientes\\GestorDeClientes\\Services\\ClienteService.cs",
+              "RelativeToolTip": "GestorDeClientes\\Services\\ClienteService.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBAAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T11:52:07.356Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Cliente.cs",
+              "DocumentMoniker": "C:\\Users\\nataf\\OneDrive\\Documentos\\Gestor-de-Clientes-CMD\\GestorDeClientes\\GestorDeClientes\\Models\\Cliente.cs",
+              "RelativeDocumentMoniker": "GestorDeClientes\\Models\\Cliente.cs",
+              "ToolTip": "C:\\Users\\nataf\\OneDrive\\Documentos\\Gestor-de-Clientes-CMD\\GestorDeClientes\\GestorDeClientes\\Models\\Cliente.cs",
+              "RelativeToolTip": "GestorDeClientes\\Models\\Cliente.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T11:44:55.868Z"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "ClienteRepository.cs",
+              "DocumentMoniker": "C:\\Users\\nataf\\OneDrive\\Documentos\\Gestor-de-Clientes-CMD\\GestorDeClientes\\GestorDeClientes\\Repositories\\ClienteRepository.cs",
+              "RelativeDocumentMoniker": "GestorDeClientes\\Repositories\\ClienteRepository.cs",
+              "ToolTip": "C:\\Users\\nataf\\OneDrive\\Documentos\\Gestor-de-Clientes-CMD\\GestorDeClientes\\GestorDeClientes\\Repositories\\ClienteRepository.cs",
+              "RelativeToolTip": "GestorDeClientes\\Repositories\\ClienteRepository.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-17T11:44:15.623Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\nataf\\OneDrive\\Documentos\\Gestor-de-Clientes-CMD\\GestorDeClientes\\GestorDeClientes\\Program.cs",
               "RelativeDocumentMoniker": "GestorDeClientes\\Program.cs",
               "ToolTip": "C:\\Users\\nataf\\OneDrive\\Documentos\\Gestor-de-Clientes-CMD\\GestorDeClientes\\GestorDeClientes\\Program.cs",
               "RelativeToolTip": "GestorDeClientes\\Program.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAmwDQAAAA0AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAF4AAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-13T16:29:10.054Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-13T16:29:10.054Z"
             }
           ]
         }

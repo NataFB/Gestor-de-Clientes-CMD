@@ -1,141 +1,116 @@
-﻿using System.Runtime.Serialization.Formatters.Binary;
-using System.Text.Json; //Importando o serializador de Json
+﻿using GestorDeClientes.Models;
+using GestorDeClientes.Services;
 
 namespace GestorDeClientes
 {
     class Program
     {
-        [System.Serializable]
-        struct Cliente
-        {
-            public string nome { get; set; }
-            public string email { get; set; }
-            public string cpf { get; set; }
-        }
-
-        static List<Cliente> clientes = new List<Cliente>();
+        // Enum para representar as opções do menu
         enum Menu { Listagem = 1, Adicionar, Remover, Sair }
+
         static void Main(string[] args)
         {
-            Carregar();
-            bool escolheuSair = false;
-            while (!escolheuSair)
+            // Cria o serviço (carrega os clientes automaticamente)
+            ClienteService service = new ClienteService();
+
+            bool sair = false;
+
+            // Loop principal do sistema (fica rodando até sair = true)
+            while (!sair)
             {
                 Console.WriteLine("Sistema de clientes - Bem vindo!");
                 Console.WriteLine("1-Listagem\n2-Adicionar\n3-Remover\n4-Sair");
-                Menu opcao = (Menu)int.Parse(Console.ReadLine()); //Passando para int e convertendo para o enum
+
+                Menu opcao = (Menu)int.Parse(Console.ReadLine());
 
                 switch (opcao)
                 {
                     case Menu.Listagem:
-                        Listagem();
+                        Listagem(service);
                         break;
+
                     case Menu.Adicionar:
-                        Adicionar();
+                        Adicionar(service);
                         break;
+
                     case Menu.Remover:
-                        Remover();
+                        Remover(service);
                         break;
+
                     case Menu.Sair:
-                        escolheuSair = true;
+                        sair = true;
                         break;
                 }
+
                 Console.Clear();
             }
         }
 
-        static void Adicionar()
+        // Menu de adicionar um cliente
+        static void Adicionar(ClienteService service)
         {
+            // Cria um objeto Cliente
             Cliente cliente = new Cliente();
-            Console.WriteLine("Cadastro de cliente: ");
-            Console.WriteLine("Nome do cliente");
-            cliente.nome = Console.ReadLine();
-            Console.WriteLine("Email do cliente: ");
-            cliente.email = Console.ReadLine();
-            Console.WriteLine("CPF do cliente: ");
-            cliente.cpf = Console.ReadLine();
 
-            clientes.Add(cliente); //adicionando cliente a lista de clientes
-            Salvar();
+            //Solicitações das informações:
+            Console.WriteLine("Nome:");
+            cliente.Nome = Console.ReadLine();
 
-            Console.WriteLine("Cadastro concluído, aperte enter para sair.");
+            Console.WriteLine("Email:");
+            cliente.Email = Console.ReadLine();
+
+            Console.WriteLine("CPF:");
+            cliente.Cpf = Console.ReadLine();
+
+            service.Adicionar(cliente); //Envia o cliente para o service adicionar e salvar
+
+            Console.WriteLine("Cadastrado! Enter...");
             Console.ReadLine();
         }
 
-        static void Listagem()
+        // Menu responsável por listar os clientes
+        static void Listagem(ClienteService service)
         {
-            if (clientes.Count > 0)
+            // Pega a lista de clientes do service
+            var clientes = service.Listar();
+
+            //Verifica se está vazia 
+            if (clientes.Count == 0)
             {
-                int i = 0;
-                Console.WriteLine("Lista de clientes: ");
-                foreach (Cliente cliente in clientes)
+                Console.WriteLine("Nenhum cliente.");
+            }
+            else
+            {
+                //Pecorre a lista de clientes exibindo os dados
+                for (int i = 0; i < clientes.Count; i++)
                 {
+                    var c = clientes[i];
+
                     Console.WriteLine($"ID: {i}");
-                    Console.WriteLine($"Nome: {cliente.nome}");
-                    Console.WriteLine($"Email: {cliente.email}");
-                    Console.WriteLine($"CPF: {cliente.cpf}");
-                    i++;
-                    Console.WriteLine("=================================");
+                    Console.WriteLine($"Nome: {c.Nome}");
+                    Console.WriteLine($"Email: {c.Email}");
+                    Console.WriteLine($"CPF: {c.Cpf}");
+                    Console.WriteLine("=====================");
                 }
-                Console.WriteLine("Aperte enter para sair da lista.");
+            }
+
+            Console.ReadLine();
+        }
+
+        //Menu de remoção de cliente
+        static void Remover(ClienteService service)
+        {
+            Listagem(service); // mostra a lista antes de remover
+
+            Console.WriteLine("ID para remover:");
+            int id = int.Parse(Console.ReadLine());
+            //tenta remover o cliente
+            if (!service.Remover(id))
+            {
+                //caso o ID seja inválido
+                Console.WriteLine("ID inválido!");
                 Console.ReadLine();
             }
-            else
-            {
-                Console.WriteLine("Nenhum cliente cadastrado! Aperte enter para sair.");
-                Console.ReadLine(); 
-            }
         }
-
-        static void Remover()
-        {
-            Listagem();
-            Console.WriteLine("Digite o ID do cliente que você quer remover:");
-            int id = int.Parse(Console.ReadLine());
-
-            if(id >= 0 && id < clientes.Count)
-            {
-                clientes.RemoveAt(id);
-                Salvar();
-            }
-            else
-            {
-                Console.WriteLine("Id digitado é inválido, tente novamente!");
-                Console.WriteLine();
-            }
-        }
-
-        static void Salvar()
-        {
-            var options = new JsonSerializerOptions
-            {
-                WriteIndented = true
-            };
-            string json = JsonSerializer.Serialize(clientes, options); //transforma a lista de clientes em json
-
-            File.WriteAllText("clients.json", json);//WriteAllText cria ou sobrescreve o arquivo
-        }
-
-        static void Carregar()
-        {
-            try
-            {
-                if (File.Exists("clients.json"))
-                {
-                    string json = File.ReadAllText("clients.json"); //le todo o arquivo de json
-
-                    clientes = JsonSerializer.Deserialize<List<Cliente>>(json); //descerializa o arquivo e passa para a lista
-                }
-
-                if (clientes == null)
-                {
-                    clientes = new List<Cliente>();
-                }
-            }
-            catch
-            {
-                clientes = new List<Cliente>();
-            }
-        }
-    }    
+    }
 }

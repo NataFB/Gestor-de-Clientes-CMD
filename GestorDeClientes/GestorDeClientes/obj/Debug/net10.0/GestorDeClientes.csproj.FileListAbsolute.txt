@@ -7,6 +7,7 @@ C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\Gesto
 C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.AssemblyInfoInputs.cache
 C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.AssemblyInfo.cs
 C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.csproj.CoreCompileInputs.cache
+C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.sourcelink.json
 C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.dll
 C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\refint\GestorDeClientes.dll
 C:\Users\nataf\OneDrive\Documentos\Gestor-de-Clientes-CMD\GestorDeClientes\GestorDeClientes\obj\Debug\net10.0\GestorDeClientes.pdb
